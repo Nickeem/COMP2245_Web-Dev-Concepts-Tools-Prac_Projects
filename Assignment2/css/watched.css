@@ -1,0 +1,42 @@
+body {
+    min-width: 300px;
+}
+main {
+    color: white;
+    margin-top: 90px;
+    display: grid;  
+    gap: 8px;
+    
+}
+
+@media screen and (min-width: 701px) {
+    main {
+        grid-template-columns: auto auto;
+    }
+    main > div {
+        grid-template-columns: 1fr 3fr;
+    }
+
+    img {
+        width: 100%;
+    }
+}
+
+main > div {
+    border: 2px #e44d26 solid;
+    display: grid;
+    
+    height: auto;
+}
+
+ img {
+    width: 100%;
+}
+
+.info {
+    margin-left: 10px;
+}
+
+.header-layout {
+    margin: 0px 5%;
+}

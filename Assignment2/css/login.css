@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Roboto:wght@500&display=swap');
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100%;
+}
+
+.home-container {
+    min-height: 100%;
+    height: 100vh;
+    background: linear-gradient(#0006, #000c, #0006), url("../img/landing.jpg");
+    /*background-position: center ;*/
+    background-clip: content-box;
+    
+    display:flex;
+    /*flex-direction: column;
+    justify-content: space-around;
+    align-items: center;*/
+    color: white;
+}
+
+@media screen and (min-width: 1100px) {
+ 
+}
+
+.titles {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10vh;
+    text-align: center;
+}
+.register-box p {
+    margin: 9px 0 ;
+}
+
+h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 50px;
+    letter-spacing: 5px;
+}
+
+h2 {
+    font-family: cursive;
+}
+
+@media screen and (min-width: 701px) {
+    h1 {
+        font-size: 4.8rem !important;
+    }
+    h2 {
+        font-size: 2.7rem;
+    }
+  }
+
+.home-buttons {
+    position: fixed;
+    bottom: 15vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.home-buttons > button {
+    font-size: xx-large;
+    background-color: #312f30;
+    color: white;
+    border-radius: 10px;
+    padding: 20px 30px;
+    border: white solid 1px;
+}
+
+.home-buttons button:hover {
+    cursor: pointer;
+    background-color: #09a303 !important;
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 9px;
+}
+
+.sign-in-box {
+    display: none;
+}
+#signin-form, #register-form {
+    margin: 10px;
+}
+
+.sign-in-box input[type="text"], .sign-in-box input[type="password"] {
+    box-sizing: border-box;
+    min-width: 100%;    
+    max-width: 100%;    
+}
+
+.box form input[type="submit"], .box form input[type="button"] {
+    text-decoration: none;
+    border: none;
+    margin-top: 5px;
+    padding: 10px;
+    
+}
+
+.error-message {
+    display: none;
+    color: red;
+}
+
+.active-button {
+    background-color: #09a303 !important;
+}
+
+.max-width
+{
+    min-width: 100%;    
+    max-width: 100%;  
+}
+
+.highlight-error {
+    background-color: #e44d26  !important;
+}
